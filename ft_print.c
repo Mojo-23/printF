@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-// did not normate // restudy vardic functions // redo the whole thing
+// did not normate // restudy vardic functions ( still not sure of how it works in memory but undertands it as a concept ) 
 
 static int ft_format(char c, va_list args)
 {
@@ -45,20 +45,17 @@ int	ft_printf(const char *format, ...)
     va_start(args, format);
     while(format[i])
     {
-        if(format[i] == '%')
-        {
-            i++;
-            count += ft_format(format[i], args);
-            i++;
-        }
-        else
-        {
-        ft_putchar(format[i]);
-        i++;
-        count++;
-        }
-
-    }
+	if(format[i] == '%')
+	{
+		i++;
+		count += ft_format(format[i], args);
+	}
+	else
+	{
+		count += ft_putchar(format[i]);
+	}
+	i++;
+   }
     va_end(args);
     return (count);
 }
