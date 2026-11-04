@@ -35,7 +35,6 @@ int	ft_putstr(char *s)
 	}
 	return (i);
 }
-// check with el shabab if u need error checks such as if ( r == -1) return (-1)
 
 int	ft_putnbr(int n)
 {
@@ -56,7 +55,6 @@ int	ft_putnbr(int n)
 	return (count + 1);
 }
 
-// also check for this if it needs error handling 
 int	ft_putunsigned(unsigned int n)
 {
 	int	count;
