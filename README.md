@@ -438,12 +438,9 @@ The assistance included:
 - Explaining C variadic functions and how `va_list`, `va_start`, `va_arg`, and `va_end` work.
 - Clarifying the relationship between the main `ft_printf` function, the format dispatcher, and the printing helpers.
 - Helping explain recursive number conversion and hexadecimal representation.
-- Reviewing code for potential mistakes, edge cases, and error-handling issues.
-- Assisting with Norminette formatting and coding-style corrections.
 - Recommending documentation and learning resources.
-- Helping organize and write the project documentation.
 
-The implementation was developed through hands-on programming and an iterative learning process, with AI used to support understanding, debugging, and documentation.
+The implementation was developed through hands-on programming and an iterative learning process, with AI used to support understanding.
 
 ---
 
